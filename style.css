@@ -1,0 +1,145 @@
+@import './normalize.css';
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+#hd {
+  width: 100%;
+  height: 130px;
+  max-width: 1250px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#hd .hd__li {
+  display: flex;
+  align-items: center;
+  margin-top: 90px;
+  position: relative;
+}
+
+#hd .hd__li h1 {
+  margin-right: 30px;
+}
+
+#hd .hd__li ul {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 0;
+}
+
+#hd .hd__logo {
+}
+
+#hd .hd__search {
+  display: flex;
+  align-items: center;
+  width: 400px;
+  border: 2px solid #9c57f5;
+  border-radius: 40px;
+  z-index: 3;
+  height: 40px;
+  font-family: 'noto sans kr';
+}
+
+#hd .hd__search h2 {
+  padding: 0 10px 0 25px;
+  margin: 0;
+  height: 35px;
+  line-height: 36px;
+  font-size: 14px;
+}
+
+#hd .hd__search button {
+  background-color: transparent;
+  border: none;
+}
+#hd .hd__search button img {
+  width: 30px;
+  height: 30px;
+}
+.search-input {
+  width: 230px;
+  height: 35px;
+  padding-left: 0;
+  background: #fff;
+  border: none;
+  font-size: 14px;
+}
+.search-input::placeholder {
+  color: #989898;
+}
+.search-input:focus {
+  border: none;
+  outline: none;
+}
+.search-input:focus::placeholder {
+  color: #9c57f5;
+  font-weight: 600;
+}
+
+.hd__gnb {
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* hd__login */
+#hd .hd__login a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+a:visited {
+  text-decoration: none;
+}
+#hd .hd__login li {
+  margin-right: 20px;
+}
+#hd .hd__login li span {
+  margin-bottom: 6px;
+}
+#hd .hd__login li:last-child {
+  margin-right: 0;
+}
+
+.lnb {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0;
+  flex-grow: 1;
+  padding: 0;
+}
+
+.lnb::after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.lnb__item {
+}
+
+.lnb__item-right {
+}
+
+main {
+  background: linear-gradient(
+    to right,
+    rgba(173, 207, 255, 0.25) 0%,
+    rgba(173, 206, 255, 0.25) 1%,
+    rgba(181, 176, 248, 0.25) 50%,
+    rgba(187, 143, 240, 0.25) 100%
+  );
+}
