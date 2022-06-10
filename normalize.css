@@ -265,6 +265,8 @@ textarea {
 
 button {
   overflow: visible;
+  background-color: transparent;
+  border: none;
 }
 
 /**
