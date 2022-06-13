@@ -12,11 +12,23 @@
       sizes="16x16"
     />
     <link rel="stylesheet" href="style.css" />
+    <!-- slick -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+
     <title>자격증넷 | 자넷 누구나, 언제든 자격증이 궁금할땐?</title>
   </head>
   <body>
     <!-- Header -->
-    <header id="hd">
+    <header id="hd" class="hd_line">
       <div class="hd__li">
         <h1>
           <a href="#"><img src="/assets/imgs/logo.png" alt="로고" /></a>
@@ -52,13 +64,14 @@
           </li>
         </ul>
       </div>
-
       <div class="hd__gnb">
         <nav class="gnb-wrapper">
-          <div>
-            <ul>
-              <li>
-                <button><img src="/assets/imgs/gnb.webp" alt="" /></button>
+          <div class="gnb-list">
+            <ul class="menu">
+              <li class="menu-all">
+                <button>
+                  <img src="/assets/imgs/gnb.webp" alt="전체메뉴" />
+                </button>
               </li>
               <li><a href="#">Top100</a></li>
               <li><a href="#">자격증정보</a></li>
@@ -66,7 +79,7 @@
               <li><a href="#">자넷톡</a></li>
             </ul>
 
-            <ul>
+            <ul class="sub-site">
               <li>
                 <a href=""
                   ><img src="/assets/imgs/aca.png" alt="우리동네학원"
@@ -87,53 +100,64 @@
     </header>
 
     <!-- Main info -->
-    <main>
-      <div>슬라이드 이미지</div>
-      <div>
-        자격증 정보
-        <div>
-          <ul>
-            <li>
-              <span>
-                <img src="/assets/imgs/inCrfc.png" alt="" />
-              </span>
-              <div>
-                <h3>자격증정보</h3>
-                <p>자격증정보의 모든 것</p>
-              </div>
-            </li>
-
-            <li>
-              <span>
-                <img src="/assets/imgs/inCrfc.png" alt="" />
-              </span>
-              <div>
-                <h3>계열별정보</h3>
-                <p>자격증에 대하여 알려드립니다.</p>
-              </div>
-            </li>
-
-            <li>
-              <span>
-                <img src="" alt="" />
-              </span>
-              <div>
-                <h3></h3>
-                <p></p>
-              </div>
-            </li>
-          </ul>
+    <section class="content_top">
+      <div class="inner">
+        <div class="inner__img">
+          <div class="img-1"></div>
+          <div class="img-2"></div>
+          <div class="img-3"></div>
+          <div class="img-4"></div>
         </div>
+        <span class="pagingInfo"></span>
+
+        <div>
+          자격증 정보
+          <div>
+            <ul>
+              <li>
+                <span>
+                  <img src="/assets/imgs/inCrfc.png" alt="" />
+                </span>
+                <div>
+                  <h3>자격증정보</h3>
+                  <p>자격증정보의 모든 것</p>
+                </div>
+              </li>
+
+              <li>
+                <span>
+                  <img src="/assets/imgs/inCrfc.png" alt="" />
+                </span>
+                <div>
+                  <h3>계열별정보</h3>
+                  <p>자격증에 대하여 알려드립니다.</p>
+                </div>
+              </li>
+
+              <li>
+                <span>
+                  <img src="" alt="" />
+                </span>
+                <div>
+                  <h3></h3>
+                  <p></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>기사 인기순위</div>
       </div>
-      <div>기사 인기순위</div>
-    </main>
+    </section>
 
     <!-- slide tab -->
-    <div>
-      <div>슬라이드탭1</div>
-      <div>슬라이드탭2</div>
-      <div>슬라이드탭3</div>
-    </div>
+    <section>
+      <div>
+        <div>슬라이드탭1</div>
+        <div>슬라이드탭2</div>
+        <div>슬라이드탭3</div>
+      </div>
+    </section>
 
     <!-- Contents -->
     <div>
@@ -144,5 +168,25 @@
         <div></div>
       </div>
     </div>
+
+    <script type="text/javascript">
+      var $status = $('.pagingInfo');
+      var $slickElement = $('.inner__img');
+
+      $slickElement.on(
+        'init reInit afterChange',
+        function (event, slick, currentSlide, nextSlide) {
+          //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+          var i = (currentSlide ? currentSlide : 0) + 1;
+          $status.text(i + '/' + slick.slideCount);
+        }
+      );
+
+      $slickElement.slick({
+        speed: 300,
+        autoplay: true,
+        arrows: false,
+      });
+    </script>
   </body>
 </html>

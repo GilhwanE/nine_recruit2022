@@ -14,7 +14,6 @@ a {
 /* Header */
 #hd {
   width: 100%;
-  height: 130px;
   max-width: 1250px;
   padding: 0;
   margin: 0 auto;
@@ -111,8 +110,50 @@ a:visited {
   margin-right: 0;
 }
 
-/* main */
-main {
+/* GNB */
+
+.gnb-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gnb-list .menu {
+  display: flex;
+  align-items: center;
+}
+.gnb-list .sub-site {
+  display: flex;
+  align-items: center;
+}
+
+.gnb-list .menu li:not(:first-child) {
+  width: 100px;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 16px;
+  height: 65px;
+  line-height: 65px;
+}
+
+.gnb-list .menu-all img {
+  width: 55px;
+  height: 55px;
+}
+
+.gnb-list .menu li a {
+  color: #333;
+}
+
+.gnb-list .sub-site li {
+  width: 100px;
+  text-align: center;
+  padding: 0 5px;
+  font-size: 16px;
+}
+
+/* section */
+.content_top {
+  padding-top: 55px;
   background: linear-gradient(
     to right,
     rgba(173, 207, 255, 0.25) 0%,
@@ -120,4 +161,41 @@ main {
     rgba(181, 176, 248, 0.25) 50%,
     rgba(187, 143, 240, 0.25) 100%
   );
+  border-bottom: 1px solid #dfdfdf;
+}
+
+.inner {
+  display: flex;
+  width: 1250px;
+  margin: 0 auto;
+}
+
+.inner .inner__img {
+  width: 420px;
+  height: 370px;
+}
+
+.inner .inner__img div {
+  background-position: center !important;
+  height: 370px;
+}
+.inner .inner__img .img-1 {
+  background: url('/assets/imgs/mainBn_top_01.png');
+}
+.inner .inner__img .img-2 {
+  background: url('/assets/imgs/mainBn_top_02.png');
+}
+.inner .inner__img .img-3 {
+  background: url('/assets/imgs/mainBn_top_03.png');
+}
+.inner .inner__img .img-4 {
+  background: url('/assets/imgs/mainBn_top_04.png');
+}
+
+.pagingInfo {
+  position: absolute;
+  bottom: 0;
+  left: 37%;
+  color: #fff;
+  width: 40px;
 }
