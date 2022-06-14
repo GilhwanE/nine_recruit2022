@@ -390,6 +390,9 @@ a:visited {
   font-size: 12px;
 }
 
+.mainChart .inner-chart .rank_item a {
+  color: #333;
+}
 .mainChart .inner-chart .rank_wrapper {
   padding: 20px 0;
 }
