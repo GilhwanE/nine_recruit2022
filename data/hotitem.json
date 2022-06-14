@@ -8,7 +8,7 @@
       "Dday": "D-3",
       "round": "제464회",
       "period": "2022-05-09 ~ 13",
-      "image": "/assets/imgs/hot_img01.png"
+      "image": "./assets/imgs/hot_img01.png"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "Dday": "D-16",
       "round": "제60회",
       "period": "2022-07-11 ~ 18",
-      "image": "/assets/imgs/hot_img02.png"
+      "image": "./assets/imgs/hot_img02.png"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "Dday": "D-37",
       "round": "국가기술자격 기사(2022년도 제3회) 필기",
       "period": "2022-06-07 ~ 10",
-      "image": "/assets/imgs/hot_img03.png"
+      "image": "./assets/imgs/hot_img03.png"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "Dday": "D-156",
       "round": "전문자격 (2022년도 33회 2차) 필기",
       "period": "2022-08-08 ~ 14",
-      "image": "/assets/imgs/hot_img04.png"
+      "image": "./assets/imgs/hot_img04.png"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "Dday": "D-37",
       "round": "국가기술자격 기사 (2022년도 제3회) 필기",
       "period": "2022-06-07 ~ 10",
-      "image": "/assets/imgs/hot_img05.png"
+      "image": "./assets/imgs/hot_img05.png"
     },
     {
       "id": 6,
@@ -58,7 +58,7 @@
       "Dday": "D-24",
       "round": "제67회 KBS한국어능력시험",
       "period": "2022-05-02 ~ 03",
-      "image": "/assets/imgs/hot_img06.png"
+      "image": "./assets/imgs/hot_img06.png"
     },
     {
       "id": 7,
@@ -68,7 +68,7 @@
       "Dday": "D-72",
       "round": "제40회",
       "period": "2022-06-03 ~ 10",
-      "image": "/assets/imgs/hot_img07.png"
+      "image": "./assets/imgs/hot_img07.png"
     },
     {
       "id": 8,
@@ -78,7 +78,7 @@
       "Dday": "D-3",
       "round": "2022년 제7회 ITQ정기시험(2022.7.9)",
       "period": "2022-06-03 ~ 08",
-      "image": "/assets/imgs/hot_img08.png"
+      "image": "./assets/imgs/hot_img08.png"
     }
   ]
 }
