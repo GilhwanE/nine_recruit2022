@@ -34,73 +34,159 @@
   <body>
     <!-- Header -->
     <header id="hd" class="hd_line">
-      <div class="hd__li">
-        <h1>
-          <a href="#"><img src="/assets/imgs/logo.png" alt="로고" /></a>
-        </h1>
+      <div class="hd__wrapper">
+        <div class="hd__li">
+          <h1>
+            <a href="#"><img src="/assets/imgs/logo.png" alt="로고" /></a>
+          </h1>
 
-        <div class="hd__search">
-          <h2>통합검색</h2>
-          <input
-            type="text"
-            class="search-input"
-            placeholder="자격증 꿀팁 보러가기 #취준 #취뽀"
-          />
-          <button><img src="/assets/imgs/mainSrchBtn.png" alt="" /></button>
+          <div class="hd__search">
+            <h2>통합검색</h2>
+            <input
+              type="text"
+              class="search-input"
+              placeholder="자격증 꿀팁 보러가기 #취준 #취뽀"
+            />
+            <button><img src="/assets/imgs/mainSrchBtn.png" alt="" /></button>
+          </div>
+
+          <ul class="hd__login">
+            <li>
+              <a href="#">
+                <span><img src="/assets/imgs/member_ov.png" alt="" /></span
+                >회원가입
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <span><img src="/assets/imgs/login.png" alt="" /></span>로그인
+              </a>
+            </li>
+            <li>
+              <a href="#"
+                ><span><img src="/assets/imgs/company.png" alt="" /></span
+                >기업서비스</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="hd__gnb">
+          <nav class="gnb-wrapper">
+            <div class="logo2">
+              <a href=""><img src="/assets/imgs/favicon.png" alt="" /></a>
+            </div>
+            <div class="gnb-list">
+              <ul class="menu">
+                <li class="menu-all">
+                  <button class="gnb_menu_button">
+                    <img src="/assets/imgs/gnb.webp" alt="전체메뉴" />
+                  </button>
+                </li>
+                <li><a href="#">Top100</a></li>
+                <li><a href="#">자격증정보</a></li>
+                <li><a href="#">어학/공무원</a></li>
+                <li><a href="#">자넷톡</a></li>
+              </ul>
+
+              <ul class="sub-site">
+                <li>
+                  <a href=""
+                    ><img src="/assets/imgs/aca.png" alt="우리동네학원"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="/assets/imgs/commu.png" alt="커뮤니티"
+                  /></a>
+                </li>
+                <li>
+                  <a href=""
+                    ><img src="/assets/imgs/ai.png" alt="자격증AI"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
 
-        <ul class="hd__login">
-          <li>
-            <a href="#">
-              <span><img src="/assets/imgs/member_ov.png" alt="" /></span
-              >회원가입
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <span><img src="/assets/imgs/login.png" alt="" /></span>로그인
-            </a>
-          </li>
-          <li>
-            <a href="#"
-              ><span><img src="/assets/imgs/company.png" alt="" /></span
-              >기업서비스</a
-            >
-          </li>
-        </ul>
-      </div>
-      <div class="hd__gnb">
-        <nav class="gnb-wrapper">
-          <div class="gnb-list">
-            <ul class="menu">
-              <li class="menu-all">
-                <button>
-                  <img src="/assets/imgs/gnb.webp" alt="전체메뉴" />
-                </button>
-              </li>
-              <li><a href="#">Top100</a></li>
-              <li><a href="#">자격증정보</a></li>
-              <li><a href="#">어학/공무원</a></li>
-              <li><a href="#">자넷톡</a></li>
-            </ul>
+        <div id="gnb__all">
+          <ul class="gnb_ul inner">
+            <li class="gnb_li">
+              <a href="" class="link">자격증정보</a>
+              <ul>
+                <li><a href="">직무별 자격증</a></li>
+                <li><a href="">계열별정보</a></li>
+                <li><a href="">국제자격증</a></li>
+                <li><a href="">자격증일정</a></li>
+                <li><a href="">시험접수안내</a></li>
+                <li><a href="">학점은행제</a></li>
+                <li><a href="">과제평가형 자격</a></li>
+                <li><a href="">직업정보검색</a></li>
+                <li><a href="">직업사전</a></li>
+                <li><a href="">국가자격대여 근절캠패인</a></li>
+              </ul>
+            </li>
 
-            <ul class="sub-site">
-              <li>
-                <a href=""
-                  ><img src="/assets/imgs/aca.png" alt="우리동네학원"
-                /></a>
-              </li>
-              <li>
-                <a href=""
-                  ><img src="/assets/imgs/commu.png" alt="커뮤니티"
-                /></a>
-              </li>
-              <li>
-                <a href=""><img src="/assets/imgs/ai.png" alt="자격증AI" /></a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+            <li class="gnb_li">
+              <a href="" class="link">어학/공무원</a>
+              <ul>
+                <li><a href="">어학</a></li>
+                <li><a href="">어학 원서접수 안내</a></li>
+                <li><a href="">공무원</a></li>
+                <li><a href="">공무원 원서접수 안내</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb_li">
+              <a href="" class="link">자넷info</a>
+              <ul>
+                <li><a href="">자넷뉴스</a></li>
+                <li><a href="">자넷매거진</a></li>
+                <li><a href="">큐넷 이용안내</a></li>
+                <li><a href="">청년지원정책</a></li>
+                <li><a href="">자격증 공모전</a></li>
+                <li><a href="">국가헤택정보</a></li>
+                <li><a href="">대학별 자격특전</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb_li">
+              <a href="" class="link">자넷톡</a>
+              <ul>
+                <li><a href="">자격증 토론방</a></li>
+                <li><a href="">일반 토론방</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">자넷TV</a></li>
+              </ul>
+              <a href="" class="link">우리동네학원</a>
+              <ul>
+                <li><a href="">맞춤학원검색</a></li>
+                <li><a href="">학원 찾아드림</a></li>
+                <li><a href="">우리동네학원 info</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb_li">
+              <a href="" class="link">자넷추천</a>
+              <ul>
+                <li><a href="">추천테스트</a></li>
+                <li><a href="">추천AI</a></li>
+                <li><a href="">커뮤니티</a></li>
+              </ul>
+            </li>
+
+            <li class="gnb_li">
+              <a href="" class="link">MY PAGE</a>
+              <ul>
+                <li><a href="">나의 자격증</a></li>
+                <li><a href="">자넷톡</a></li>
+                <li><a href="">즐겨찾기</a></li>
+                <li><a href="">나의정보수정</a></li>
+                <li><a href="">자격증정보수정</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -345,6 +431,7 @@
         speed: 300,
       });
     </script>
+
     <script src="/main.js"></script>
   </body>
 </html>

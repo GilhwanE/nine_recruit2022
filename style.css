@@ -18,6 +18,21 @@ a {
 
 /* Header */
 #hd {
+  z-index: 99;
+  background: #fff;
+  width: 100%;
+}
+
+#hd.gnb__fixed {
+  position: fixed;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  z-index: 999;
+  padding: 10px 0;
+  transition: all 0.1s ease;
+}
+
+#hd .hd__wrapper {
   width: 100%;
   max-width: 1250px;
   padding: 0;
@@ -27,7 +42,6 @@ a {
 #hd .hd__li {
   display: flex;
   align-items: center;
-  margin-top: 90px;
   position: relative;
 }
 
@@ -42,7 +56,28 @@ a {
   right: 0;
 }
 
-#hd .hd__logo {
+#hd.gnb__fixed .logo2 {
+  float: left;
+  margin: 15px 20px 0 20px;
+  display: block;
+}
+#hd .logo2 {
+  display: none;
+}
+#hd.gnb__fixed .hd__li .hd__search,
+#hd.gnb__fixed .hd__li h1 {
+  display: none;
+}
+#hd.gnb__fixed .hd__li .hd__login {
+  display: flex;
+  margin-top: 60px;
+  z-index: 999;
+}
+#hd.gnb__fixed #gnb__all.show {
+  top: 80px;
+}
+#hd.gnb__fixed .gnb-list {
+  display: inline-flex;
 }
 
 #hd .hd__search {
@@ -100,7 +135,10 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #333;
+  color: #919191;
+  font-weight: 500;
+  font-family: 'noto sans kr';
+  font-size: 14px;
 }
 a:visited {
   text-decoration: none;
@@ -152,9 +190,51 @@ a:visited {
 
 .gnb-list .sub-site li {
   width: 100px;
-  text-align: center;
+  text-align: end;
   padding: 0 5px;
   font-size: 16px;
+}
+
+#gnb__all {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background: #fff;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+  z-index: 999;
+  display: none;
+}
+
+#gnb__all.show {
+  display: block;
+}
+
+#gnb__all .gnb_ul {
+  background: #fff;
+}
+
+.gnb_ul .gnb_li {
+  flex: 1;
+  padding: 30px 29px;
+  align-items: flex-start;
+  border-right: 1px solid #efefef;
+}
+.gnb_ul .gnb_li li {
+  padding: 7px 0;
+  line-height: 1.3;
+  font-size: 13px;
+}
+.gnb_ul .gnb_li .link {
+  font-size: 14px;
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #4a4a4a;
+}
+.gnb_ul .gnb_li li a {
+  color: #4a4a4a;
 }
 
 /* section */

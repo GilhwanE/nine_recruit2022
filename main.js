@@ -35,6 +35,19 @@ function createHTMLString(item) {
 }
 
 loadItems().then((items) => {
-  console.log(items);
   displayItems(items);
+});
+
+$('.gnb_menu_button').click(() => {
+  $('#gnb__all').slideToggle();
+});
+
+const tophd = document.querySelector('#hd');
+const hdgnbHeight = tophd.getBoundingClientRect().height;
+document.addEventListener('scroll', () => {
+  if (window.scrollY > hdgnbHeight) {
+    tophd.classList.add('gnb__fixed');
+  } else {
+    tophd.classList.remove('gnb__fixed');
+  }
 });
