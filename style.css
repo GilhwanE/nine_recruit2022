@@ -83,13 +83,24 @@ a {
 #hd .hd__search {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
+  position: relative;
   width: 400px;
   border: 2px solid #9c57f5;
   border-radius: 40px;
   z-index: 3;
   height: 40px;
   font-family: 'noto sans kr';
+  transition: width 0.3s ease;
+}
+
+#hd .hd__search.wide {
+  width: 600px;
+}
+
+#hd .hd__search button {
+  position: absolute;
+  right: 0;
 }
 
 #hd .hd__search h2 {

@@ -51,3 +51,10 @@ document.addEventListener('scroll', () => {
     tophd.classList.remove('gnb__fixed');
   }
 });
+
+const searchInput = document.querySelector('.search-input');
+const hdInput = document.querySelector('.hd__search');
+
+searchInput.addEventListener('click', () => {
+  hdInput.classList.toggle('wide');
+});
