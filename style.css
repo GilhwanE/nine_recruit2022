@@ -91,7 +91,7 @@ a {
   z-index: 3;
   height: 40px;
   font-family: 'noto sans kr';
-  transition: width 0.3s ease;
+  transition: width 0.5s ease-in-out;
 }
 
 #hd .hd__search.wide {
