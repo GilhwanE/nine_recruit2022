@@ -369,10 +369,91 @@ a:visited {
 
 .mainChart .inner-chart .rank_item {
   line-height: 25px;
+  font-size: 12px;
+}
+
+.mainChart .inner-chart .rank_wrapper {
+  padding: 20px 0;
 }
 
 .mainChart .inner-chart .item {
   font-size: 12px;
+}
+
+.mainChart .slick-prev,
+.mainChart .slick-next {
+  font-size: 12px;
+  background-color: transparent;
+  color: #8e8cfd !important;
+}
+
+.mainChart .inner-chart button {
+  font-size: 0;
+  color: transparent;
+  position: absolute;
+  top: 45px;
+  z-index: 10;
+  width: 19px !important;
+  height: 19px !important;
+  border: 1px solid #dfdfdf;
+  padding: 0;
+  margin: 0 !important;
+}
+.mainChart .inner-chart .slick-prev {
+  right: 50px;
+}
+.mainChart .inner-chart .slick-next {
+  right: 32px;
+}
+
+.mainChart .inner-chart button::before {
+  font-family: 'xeicon';
+  font-size: 18px;
+}
+.mainChart .slick-next::before {
+  content: '\e93f';
+}
+.mainChart .slick-prev::before {
+  content: '\e93c';
+  left: 50px;
+}
+
+.inner-chart .rank_item:before {
+  font-weight: bold;
+  width: 20px;
+  color: #bababa;
+  display: inline-block;
+  text-align: center;
+}
+.inner-chart .rank_item:nth-child(1)::before {
+  content: '1';
+}
+.inner-chart .rank_item:nth-child(2)::before {
+  content: '2';
+}
+.inner-chart .rank_item:nth-child(3)::before {
+  content: '3';
+}
+.inner-chart .rank_item:nth-child(4)::before {
+  content: '4';
+}
+.inner-chart .rank_item:nth-child(5)::before {
+  content: '5';
+}
+.inner-chart .rank_item:nth-child(6)::before {
+  content: '6';
+}
+.inner-chart .rank_item:nth-child(7)::before {
+  content: '7';
+}
+.inner-chart .rank_item:nth-child(8)::before {
+  content: '8';
+}
+.inner-chart .rank_item:nth-child(9)::before {
+  content: '9';
+}
+.inner-chart .rank_item:nth-child(10)::before {
+  content: '10';
 }
 
 /* AdSection */

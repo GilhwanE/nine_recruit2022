@@ -257,67 +257,134 @@
 
         <div class="mainChart">
           <div class="inner-chart">
-            <h2>기사 인기순위</h2>
             <ul class="rank">
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">전기기사</span>
-                </a>
-              </li>
+              <h2>기사 인기순위</h2>
+              <div class="rank_wrapper">
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">전기기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">산업기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">산업기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">위험물산업기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">위험물산업기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">전기산업기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">전기산업기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">건축기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">건축기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">건설안전기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">건설안전기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">소방설비기사(전기분야)</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">소방설비기사(전기분야)</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">재퓸다저안산업기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">재퓸다저안산업기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">건설기계정비산업기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">건설기계정비산업기사</span>
+                  </a>
+                </li>
 
-              <li class="rank_item">
-                <a href="#">
-                  <span class="item">사출금형산업기사</span>
-                </a>
-              </li>
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">사출금형산업기사</span>
+                  </a>
+                </li>
+              </div>
+            </ul>
+
+            <ul class="rank">
+              <h2>기능장 인기순위</h2>
+              <div class="rank_wrapper">
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">위험물기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">전기기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">위험물산업기사</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">가스기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">용접기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">기계가공기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">건축일반시공기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">귀금속가공기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">금형제작기능장</span>
+                  </a>
+                </li>
+
+                <li class="rank_item">
+                  <a href="#">
+                    <span class="item">판금제관기능장</span>
+                  </a>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -428,6 +495,10 @@
       $('.ad__img').slick({
         slidesToShow: 3,
         slidesToScroll: 1,
+        speed: 300,
+      });
+
+      $('.inner-chart').slick({
         speed: 300,
       });
     </script>
