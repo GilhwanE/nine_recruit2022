@@ -295,6 +295,9 @@ a:visited {
   height: auto;
   background: #fff;
   margin-right: 10px;
+}
+
+.mainInfo .info-wrapper {
   padding: 40px 0px 35px 0px;
 }
 
@@ -302,9 +305,13 @@ a:visited {
   font-size: 17px;
   font-weight: 500;
   margin: 0;
-  margin-left: 45px;
+  margin-left: 15px;
+  position: relative;
+  top: -12px;
 }
-
+.mainInfo i {
+  display: block;
+}
 .info__menu {
   padding: 20px 25px;
 }
@@ -381,13 +388,16 @@ a:visited {
 }
 
 .mainChart .slick-prev,
-.mainChart .slick-next {
+.mainChart .slick-next,
+.mainInfo .slick-next,
+.mainInfo .slick-prev {
   font-size: 12px;
   background-color: transparent;
   color: #8e8cfd !important;
 }
 
-.mainChart .inner-chart button {
+.mainChart .inner-chart button,
+.mainInfo .info-wrapper button {
   font-size: 0;
   color: transparent;
   position: absolute;
@@ -399,21 +409,26 @@ a:visited {
   padding: 0;
   margin: 0 !important;
 }
-.mainChart .inner-chart .slick-prev {
+.mainChart .inner-chart .slick-prev,
+.mainInfo .info-wrapper .slick-prev {
   right: 50px;
 }
-.mainChart .inner-chart .slick-next {
+.mainChart .inner-chart .slick-next,
+.mainInfo .info-wrapper .slick-next {
   right: 32px;
 }
 
-.mainChart .inner-chart button::before {
+.mainChart .inner-chart button::before,
+.mainInfo .info-wrapper button::before {
   font-family: 'xeicon';
   font-size: 18px;
 }
-.mainChart .slick-next::before {
+.mainChart .slick-next::before,
+.mainInfo .slick-next::before {
   content: '\e93f';
 }
-.mainChart .slick-prev::before {
+.mainChart .slick-prev::before,
+.mainInfo .slick-prev::before {
   content: '\e93c';
   left: 50px;
 }
