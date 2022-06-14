@@ -104,6 +104,7 @@ a {
 }
 a:visited {
   text-decoration: none;
+  color: inherit;
 }
 #hd .hd__login li {
   margin-right: 20px;
@@ -266,4 +267,28 @@ a:visited {
   position: absolute;
   left: 53px;
   bottom: 15px;
+}
+
+.mainChart {
+  width: 260px;
+  height: 370px;
+  background: #fff;
+}
+
+.mainChart h2 {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.mainChart .inner-chart {
+  padding: 40px 30px;
+}
+
+.mainChart .inner-chart .rank_item {
+  line-height: 25px;
+}
+
+.mainChart .inner-chart .item {
+  font-size: 12px;
 }
