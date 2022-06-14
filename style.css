@@ -345,3 +345,24 @@ a:visited {
 .ad__section .ad__img .slick-slide {
   margin-right: 20px;
 }
+
+/* HOT-section */
+
+.hot__section {
+  margin-bottom: 10px;
+}
+
+.hot__section .purple {
+  color: #8f45ef;
+}
+
+.hot__section h2 {
+  font-size: 28px;
+  margin: 0 0 20px;
+  padding-left: 42px;
+  background: url('/assets/imgs/hot_keyword.png') 0 50% no-repeat;
+}
+
+.hot__section .thin {
+  font-weight: 400;
+}
