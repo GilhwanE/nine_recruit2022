@@ -159,6 +159,7 @@ a:visited {
 
 /* section */
 .content_top {
+  position: relative;
   padding: 55px 0;
   background: linear-gradient(
     to right,
@@ -202,10 +203,11 @@ a:visited {
 
 .pagingInfo {
   position: absolute;
-  bottom: 0;
+  bottom: 75px;
   left: 37%;
   color: #fff;
   width: 40px;
+  font-size: 12px;
 }
 .mainInfo {
   position: relative;
@@ -365,4 +367,167 @@ a:visited {
 
 .hot__section .thin {
   font-weight: 400;
+}
+
+.items {
+  min-height: 600px;
+}
+
+.items .item {
+  float: left;
+  width: 300px;
+  height: 190px;
+  margin: 0 16px 16px 0;
+  cursor: pointer;
+  position: relative;
+}
+
+.items .item a {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 300px;
+  height: 190px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  z-index: 1;
+  border-radius: 10px;
+}
+
+.items .item:nth-child(4n + 1) {
+  clear: both;
+}
+.items .item:nth-child(4n) {
+  margin-right: 0;
+}
+
+.item .itemBox {
+  width: 300px;
+  height: 120px;
+  background: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+.item .itemBox .name {
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 0 30px;
+  margin: 0;
+  width: 100%;
+  line-height: 60px;
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.6) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.item a:hover {
+  height: 395px;
+  border: 2px solid transparent;
+  background: linear-gradient(to right, white, white),
+    linear-gradient(135deg, #add0ff, #bc8ff0);
+  background-clip: padding-box, border-box;
+  background-origin: padding-box, border-box;
+  z-index: 9;
+}
+.items .item a:hover:after {
+  content: url(../assets/imgs/plusB_con.png);
+  background: #bc8ff0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 13px 11px 10px 13px;
+  border-top-left-radius: 10px;
+}
+
+.item .itemBox img {
+  opacity: 0.2;
+}
+.item:hover .itemBox img {
+  opacity: 0.9;
+}
+
+.items .item:nth-child(1) .itemBox {
+  background: #e9b107;
+}
+.items .item:nth-child(2) .itemBox {
+  background: #4b3961;
+}
+
+.items .item:nth-child(3) .itemBox {
+  background: #e16045;
+}
+.items .item:nth-child(4) .itemBox {
+  background: #474756;
+}
+.items .item:nth-child(5) .itemBox {
+  background: #305a7e;
+}
+.items .item:nth-child(6) .itemBox {
+  background: #b13c2f;
+}
+
+.items .item:nth-child(7) .itemBox {
+  background: #383f4e;
+}
+
+.items .item:nth-child(8) .itemBox {
+  background: #cd9308;
+}
+
+.item .itemBox .item_day {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  display: block;
+  width: 44px;
+  line-height: 19px;
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+  background: #9c57f5;
+  border-radius: 10px;
+}
+
+.item .sub_txt {
+  padding: 12px 0 20px;
+  margin: 0 29px;
+}
+
+.item .sub_txt p {
+  font-size: 14px;
+  line-height: 2;
+  height: 28px;
+  margin: 0;
+  color: #6e6e6e;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.item .sub_txt .date {
+  font-size: 12px;
+  color: #f15959;
+}
+
+.items .item:hover .over_txt {
+  display: block;
+  margin: 0 29px;
+}
+.items .item .over_txt {
+  margin: 0 29px;
+  padding-top: 30px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.items .item .over_txt p {
+  font-size: 14px;
+  margin: 0;
+  line-height: 1.8;
 }
