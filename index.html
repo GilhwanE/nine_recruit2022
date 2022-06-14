@@ -12,6 +12,11 @@
       sizes="16x16"
     />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
+    />
+
     <!-- slick -->
     <link
       rel="stylesheet"
@@ -234,11 +239,69 @@
     </section>
 
     <!-- slide tab -->
-    <section>
-      <div>
-        <div>슬라이드탭1</div>
-        <div>슬라이드탭2</div>
-        <div>슬라이드탭3</div>
+
+    <section class="ad__section inner">
+      <div class="ad__img">
+        <div>
+          <a
+            href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=176"
+          >
+            <img
+              src="/assets/imgs/MainBn_scroll_01.png"
+              alt="한달만에 취득가능한 자격증"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=170"
+          >
+            <img
+              src="/assets/imgs/MainBn_scroll_02.png"
+              alt="자격증 따기전에 알아둬야 할 것, 내게 꼭 필요한 자격증따기"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=184"
+          >
+            <img
+              src="/assets/imgs/MainBn_scroll_03.png"
+              alt="가장 따기 쉬운 자격증"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=182"
+          >
+            <img
+              src="/assets/imgs/MainBn_scroll_04.png"
+              alt="시험없이 취득 할 수 있는 국가자격증"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=174"
+          >
+            <img
+              src="/assets/imgs/MainBn_scroll_05.png"
+              alt="전략적인 자격증따기"
+            />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://janet.co.kr/bbs/board.php?bo_table=bMagazine&wr_id=183"
+          >
+            <img
+              src="/assets/imgs/MainBn_scroll_06.png"
+              alt="월 300 이상 버는 자격증이 있다?"
+            />
+          </a>
+        </div>
       </div>
     </section>
 
@@ -269,6 +332,13 @@
         speed: 300,
         autoplay: true,
         arrows: false,
+      });
+
+      // center-section
+      $('.ad__img').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        speed: 300,
       });
     </script>
   </body>

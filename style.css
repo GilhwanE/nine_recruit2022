@@ -292,3 +292,56 @@ a:visited {
 .mainChart .inner-chart .item {
   font-size: 12px;
 }
+
+/* AdSection */
+
+.ad__section {
+  position: relative;
+  margin: 30px auto 30px;
+  padding: 0 24px;
+}
+.ad__section.inner {
+  display: block;
+}
+
+.ad__section .ad__img {
+  padding: 0 24px;
+  padding-left: 30px;
+}
+.ad__section .ad__img button:before {
+  font-family: 'xeicon';
+  color: #333;
+  font-size: 20px;
+}
+
+.ad__section .ad__img .slick-prev::before {
+  content: '\e93d';
+  font-family: 'xeicon';
+}
+.ad__section .ad__img .slick-next::before {
+  content: '\e940';
+  font-family: 'xeicon';
+}
+
+.ad__section .ad__img button {
+  position: absolute;
+  font-size: 0;
+  color: transparent;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.ad__section .ad__img .slick-prev {
+  left: 0;
+}
+.ad__section .ad__img .slick-next {
+  right: 0;
+}
+
+.ad__section .ad__img .swiper-slide {
+  display: inline-block;
+}
+
+.ad__section .ad__img .slick-slide {
+  margin-right: 20px;
+}
