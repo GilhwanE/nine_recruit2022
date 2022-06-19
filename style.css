@@ -161,6 +161,9 @@ a:visited {
 #hd .hd__login li span {
   margin-bottom: 6px;
 }
+#hd .hd__login a:hover {
+  color: #9c57f5;
+}
 #hd .hd__login li:last-child {
   margin-right: 0;
 }
@@ -199,11 +202,41 @@ a:visited {
   color: #333;
 }
 
+.gnb-list .menu li:nth-child(5) a:hover {
+  background: url(./assets/imgs/gnbInfo.webp) no-repeat center 18px;
+  width: 100px;
+  display: block;
+  font-size: 0;
+}
+
+.gnb-list .menu li:nth-child(6) a:hover {
+  background: url(./assets/imgs/gnbTalk.webp) no-repeat center 18px;
+  width: 100px;
+  display: block;
+  font-size: 0;
+}
+
 .gnb-list .sub-site li {
   width: 100px;
-  text-align: end;
   padding: 0 5px;
   font-size: 16px;
+}
+.gnb-list .sub-site li a {
+  width: 150px;
+  display: block;
+  height: 60px;
+}
+.gnb-list .sub-site li:nth-child(1) a {
+  background: url(./assets/imgs/aca.png) no-repeat 40px;
+}
+.gnb-list .sub-site li:nth-child(2) a {
+  background: url(./assets/imgs/commu.png) no-repeat 60px;
+}
+.gnb-list .sub-site li:nth-child(3) a {
+  background: url(./assets/imgs/ai.png) no-repeat 40px 25px;
+}
+.gnb-list .sub-site li:nth-child(3) a:hover {
+  background: url(./assets/imgs/ai_ov.webp) no-repeat 40px 0px;
 }
 
 #gnb__all {
@@ -246,6 +279,14 @@ a:visited {
 }
 .gnb_ul .gnb_li li a {
   color: #4a4a4a;
+}
+
+.gnb-wrapper .gnb-list .menu {
+  font-weight: 500;
+}
+.gnb_ul .gnb_li li a:hover,
+.gnb-wrapper .gnb-list .menu a:hover {
+  color: #9c57f5;
 }
 
 /* section */
@@ -392,6 +433,9 @@ a:visited {
 
 .mainChart .inner-chart .rank_item a {
   color: #333;
+}
+.mainChart .inner-chart .rank_item a:hover {
+  text-decoration-line: underline;
 }
 .mainChart .inner-chart .rank_wrapper {
   padding: 20px 0;
