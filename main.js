@@ -1,3 +1,5 @@
+// Json 파일 불러오기
+
 function loadItems() {
   return fetch('data/hotitem.json')
     .then((response) => response.json())
@@ -8,6 +10,8 @@ function displayItems(items) {
   const container = document.querySelector('.items');
   container.innerHTML = items.map((item) => createHTMLString(item)).join('');
 }
+
+// Json 리스트 출력
 
 function createHTMLString(item) {
   return `
@@ -37,6 +41,8 @@ function createHTMLString(item) {
 loadItems().then((items) => {
   displayItems(items);
 });
+
+// 각 버튼 요소들 이벤트 효과
 
 $('.gnb_menu_button').click(() => {
   $('#gnb__all').slideToggle();
